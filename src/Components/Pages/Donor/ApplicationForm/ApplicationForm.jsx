@@ -45,6 +45,8 @@ function ApplicationForm({ setDonor }) {
                         phone: docSnap.data().phone,
                         mahal: docSnap.data().mahal
                     }));
+                    setSelectedOption({ label: docSnap.data().mahal, value: docSnap.data().mahal });
+                
                     console.log("Document data:", docSnap.data());
                 } else {
                     console.log("No such document!");

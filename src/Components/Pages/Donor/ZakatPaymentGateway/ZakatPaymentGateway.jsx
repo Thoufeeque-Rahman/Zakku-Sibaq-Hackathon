@@ -18,7 +18,7 @@ function PaymentProcessingModal({ show, setShow, setFullscreen, handleClose, han
     const [isSuccess, setIsSuccess] = useState(false);
 
     useEffect(() => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
         if (show) {
             const timer = setTimeout(() => {
                 setIsProcessing(false);
@@ -206,7 +206,8 @@ function PaymentDoneModal({ show, handleClose, amount, claimantData, paymentData
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
                                     <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                </svg> Save Screenshot</button>
+                                </svg> Save Screenshot
+                            </button>
                         </div>
                     </div>
                 </Modal.Body>
@@ -250,7 +251,7 @@ function ZakatPaymentGateway({ vakeel, v2c }) {
 
 
     useEffect(() => {
-        window.scrollTo(0, 0); 
+        window.scrollTo(0, 0);
         if (user) {
             const fetchTransactions = async () => {
                 try {
@@ -772,7 +773,7 @@ function ZakatPaymentGateway({ vakeel, v2c }) {
                                                     alert('Amount is greater than amount payable')
                                                     setAmount(0)
                                                 }
-                                                
+
                                             }}
                                             onWheel={(e) => e.target.blur()}
                                             style={{
@@ -834,7 +835,7 @@ function ZakatPaymentGateway({ vakeel, v2c }) {
                                 backgroundColor: 'var(--primary-color)',
                                 border: '1px solid var(--primary-color)',
                             }} onClick={() => setConfirm(true)}>Pay ₹{(parseFloat(amount).toFixed(2))}</Button>
-                        </Form> 
+                        </Form>
                         <Modal show={confirm} centered id="paymentModal" onHide={() => setConfirm(false)}>
                             <p>Are you sure to proceed with this transaction?</p>
                             <div className="d-flex gap-3">

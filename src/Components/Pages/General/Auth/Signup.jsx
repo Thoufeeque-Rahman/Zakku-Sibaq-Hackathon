@@ -336,7 +336,7 @@ const Signup = ({ general, userMode }) => {
                   <select onChange={handleChangeSelect} id="mahal" className="form-select" aria-label="Default select example" style={{ height: '50px' }}>
                     <option value="" selected>Select Position</option>
                     <option value="president">President</option>
-                    <option value="secretory">Secretory</option>
+                    <option value="secretary">Secretary</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

@@ -209,7 +209,7 @@ const Login = ({ general, userMode }) => {
           Don't have an account?
           {general && <Link to="/general/signup"> Sign up</Link>}
           {userMode === 'Mahal' && <Link to="/general/mahal/signup"> Sign up</Link>}
-          {userMode === 'Vakeel' && <Link to="/general/vakeel/signup"> Sign up</Link>}
+          {/* {userMode === 'Vakeel' && <Link to="/general/vakeel/signup"> Sign up</Link>} */}
         </p>
       </div>
     </div>
