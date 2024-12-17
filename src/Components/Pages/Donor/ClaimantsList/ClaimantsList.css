@@ -1,0 +1,51 @@
+.claimant-box .header {
+    height: 120px;
+}
+
+.claimants-list-body {
+    /* padding: 15px 20px; */
+    margin: 0px 30px;
+    margin-top: -35px;
+    /* background-color: #fff; */
+    border-radius: 30px;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.filter-box {
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.filter-box select {
+    padding: 5px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+
+.filter-box select {
+    border: 2px solid #d9d9d9;
+    width: 100%;
+    color: #309A84;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.filter-box select:focus, .filter-box select:focus-within, .filter-box select:focus-visible {
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+    outline: none;
+}
+
+
+.claimants-box .alert {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: var(--box-shadow);
+}

@@ -1,0 +1,177 @@
+.container-box {
+    min-height: 100vh;
+    padding: 0px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.home-box {
+    background-color: var(--white);
+    /* border-radius: 12px; */
+    /* padding: 40px; */
+    width: 430px;
+    min-height: 100vh;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.application-box .header {
+    height: 200px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.application-body {
+    padding: 15px 20px;
+    margin: 0px 30px;
+    margin-top: -90px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.application-body .form-group input {
+    border: 2px solid #d9d9d9;
+    width: 100%;
+}
+
+.application-body .form-group input:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+
+.form-group>* {
+    /* Target all direct children of form-group */
+    display: inline-block;
+    vertical-align: middle;
+    /* To align them vertically */
+}
+
+.form-group {
+    display: inline-flex;
+    /* Change from 'flex' to 'inline-flex' */
+    align-items: start;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input,
+.application-body .form-group select {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 14px;
+    width: 100%;
+    flex-shrink: 1;
+    /* Allows the input to shrink */
+    margin: 0;
+    /* Reset any margins */
+
+}
+
+.form-group input::placeholder {
+    color: #d9d9d9;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.form-group .input-group,
+.application-body .form-group select {
+    padding: 5px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+.application-body .form-group select {
+    padding: 10px 16px;
+}
+
+.application-body .form-group select option,
+.application-body .form-group select option:hover {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--white);
+    border: none;
+    border-radius: 15px;
+    color: var(--text-color);
+
+}
+
+
+.form-group .input-group:focus-within,
+.application-body .form-group select:focus-within {
+    border-color: var(--primary-color);
+}
+
+/* Optional: Remove default outline on input */
+.form-group .input-group input:focus,
+.application-body .form-group select:focus-within {
+    outline: none;
+    box-shadow: none;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    .container-box {
+        background-color: var(--white);
+        padding: 0;
+        align-items: flex-start;
+        box-shadow: 0;
+
+    }
+
+    .application-box {
+        box-shadow: none;
+    }
+
+    .header {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+}

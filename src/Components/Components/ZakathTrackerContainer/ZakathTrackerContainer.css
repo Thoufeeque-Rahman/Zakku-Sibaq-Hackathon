@@ -1,0 +1,36 @@
+.zakath-tracker-body-content .progress .progress-bar {
+    background-color: #309A84;
+}
+
+.zakath-tracker-container {
+    min-width: 300px;
+    background: var(--white);
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.1);
+    align-items: center;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.zakath-tracker-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zakath-tracker-content p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.track-zakath-btn div:hover {
+    background-color: #309A84;
+    color: #fff !important;
+    border: 1px solid #309A84 !important;
+
+}

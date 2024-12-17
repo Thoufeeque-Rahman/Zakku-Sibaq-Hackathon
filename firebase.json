@@ -1,0 +1,6 @@
+{
+  "firestore": {
+    "rules": "cors.json",
+    "indexes": "firestore.indexes.json"
+  }
+}

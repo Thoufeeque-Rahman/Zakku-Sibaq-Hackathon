@@ -1,0 +1,31 @@
+.zakat-calcu-indica-container {
+    min-width: 300px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    scroll-snap-align: start;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    margin: auto 0px;
+}
+
+.zakat-calcu-indicator-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zakat-calcu-indicator-content p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.zakat-calcu-indicator-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}

@@ -1,0 +1,135 @@
+.container-box {
+    /* padding: 20px; */
+}
+
+.getStarted-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 480px;
+    box-shadow: var(--box-shadow);
+}
+
+.svg-icon {
+    background-color: #E5F9F6;
+    border-radius: 50%;
+    padding: 12px;
+    width: fit-content;
+}
+
+.features-cards {
+    margin-top: 10px;
+}
+
+.feature-card {
+    /* background-color: #fff; */
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-align: start;
+    /* box-shadow: var(--box-shadow); */
+    text-justify: inter-word;
+}
+
+.feature-card-body {
+    text-align: start;
+    text-justify: auto;
+    align-content: center;
+}
+
+.feature-card-body h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.feature-card-body p {
+    font-size: 11px;
+    color: #6C6C6C;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropdown button {
+    padding: 0px;
+}
+
+.dropdown button::after {
+    content: none;
+}
+
+.dropdown-menu.show {
+    padding: 8px 8px;
+    margin-top: 0px;
+    border-radius: 18px;
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+.dropdown-menu.show .dropdown-item {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 8px 8px;
+    border-radius: 11px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu.show .dropdown-item:hover, .dropdown-menu.show .dropdown-item:focus {
+    background-color: #E5F9F6;
+    color: var(--primary-color);
+}
+
+.getStarted-footer .btn {
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.getStarted-footer .login-btn{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+}
+
+.getStarted-footer .login-btn:hover, .getStarted-footer .login-btn:focus {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+.getStarted-footer .create-btn{
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.getStarted-footer .create-btn:hover, .getStarted-footer .create-btn:focus {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+}
+
+
+@media (max-width: 480px) {
+    .container-box {
+        background-color: var(--white);
+    }
+
+    .getStarted-box {
+        box-shadow: none;
+        padding: 44px;
+    }
+
+    .btn {
+        padding: 12px;
+    }
+
+}

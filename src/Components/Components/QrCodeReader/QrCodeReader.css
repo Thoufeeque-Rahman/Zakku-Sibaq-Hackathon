@@ -1,0 +1,11 @@
+.qr-reader input {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 14px;
+    width: 100%;
+    flex-shrink: 1;
+    /* Allows the input to shrink */
+    margin: 0;
+    /* Reset any margins */
+
+}

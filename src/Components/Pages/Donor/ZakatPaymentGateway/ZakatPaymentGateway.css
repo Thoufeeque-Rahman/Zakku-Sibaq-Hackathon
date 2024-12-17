@@ -1,0 +1,72 @@
+.payment-box .header {
+    height: 170px;
+}
+
+.payment-body {
+    /* padding: 15px 20px; */
+    margin: 0px 30px;
+    margin-top: -70px;
+    /* background-color: #fff; */
+    border-radius: 30px;
+    /* box-shadow: var(--box-shadow); */
+}
+
+.payment-card {
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#paymentProcessingModal.modal-dialog {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    left: 0;
+}
+
+#paymentModal .modal-content {
+    border-radius: 30px ;
+    padding: 20px; 
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+}
+
+
+#paymentProcessingModal .modal-content {
+    border-radius: 30px 30px 0 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.payment-details-card {
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.payment-details-card p {
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0;
+}

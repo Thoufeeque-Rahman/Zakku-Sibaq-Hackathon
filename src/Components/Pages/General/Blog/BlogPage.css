@@ -1,0 +1,22 @@
+.blog-page-box .header{
+    height: 130px;
+}
+.blog-page-body {
+    margin: 0px 30px;
+    margin-top: -90px;
+}
+.blog-page-box{
+    background-color: #fff;
+    border-radius: 30px;
+    min-height: 100vh;
+    /* box-shadow: var(--box-shadow); */
+}
+.blog-box{
+    box-shadow: var(--box-shadow);
+    border-radius: 30px;
+    background-color: #fff;
+    background-size: cover;
+}
+.blog-image{
+    border-radius: 30px 30px 0px 0px;
+}

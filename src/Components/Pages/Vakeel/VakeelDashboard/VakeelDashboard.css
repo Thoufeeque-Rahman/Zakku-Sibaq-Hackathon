@@ -1,0 +1,23 @@
+.vakeel-dash-box .header {
+    height: 200px;
+}
+
+.vakeel-dash-body {
+    /* padding: 15px 20px; */
+    margin: 0px 30px;
+    margin-top: -100px;
+    /* background-color: #fff; */
+    border-radius: 30px;
+    /* box-shadow: var(--box-shadow); */
+}
+
+#claimant-donor-tabs.vakeel .nav-link,
+#claimant-donor-tabs.vakeel .nav-link.active {
+    /* color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px; */
+    margin-right: 0px;
+    padding: 5px 10px;
+    font-size: 13px;
+}

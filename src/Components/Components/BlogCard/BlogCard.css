@@ -1,0 +1,31 @@
+.blog-card {
+    background: var(--white);
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.1);
+    align-items: center;
+    margin-top: 0px;
+    cursor: pointer;
+    margin: auto 0px;
+}
+
+.blog-card button {
+    background-color: var(--white);
+    color: var(--text-color);
+    width: 100%;
+    padding: 5px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.blog-card button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
