@@ -10,7 +10,7 @@ import { getAuth } from 'firebase/auth';
 import GeneralPage from './Components/Pages/General/GeneralPage';
 import DonorPage from './Components/Pages/Donor/DonorPage';
 import Profile from './Components/Pages/General/Settings-profile/Profile';
-import MahalRP from './Components/Pages/MahalRP/MahalRP'; 
+import MahalRP from './Components/Pages/MahalRP/MahalRP';
 import ClaimantPage from './Components/Pages/Claimant/ClaimantPage';
 import QRCodeImageScanner from './Components/Components/QrCodeReader/QrCodeReader';
 import BlogPage from './Components/Pages/General/Blog/BlogPage';
@@ -35,7 +35,7 @@ function App() {
     generateToken();
     onMessage(messaging, (payload) => {
       console.log('Message received. ', payload);
-      
+
     });
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/firebase-messaging-sw.js')
@@ -57,30 +57,19 @@ function App() {
         <Route path='/splashScreen' element={<SplashScreen />} />
         <Route path='/getStarted' element={isLoading ? <SplashScreen /> : <GetStarted />} />
         <Route path='/help-and-support' element={<HelpAndSupport />} />
-        <Route path='/general/*' element={
-          <Routes>
-            <Route path='/' element={<SplashScreen />} />
-            <Route path="/login" element={<Login general={true} userMode='General' />} />
-            <Route path="/signup" element={<Signup general={true} userMode='General' />} />
-            <Route path='/home/*' element={<GeneralPage />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path='/blog' element={<BlogPage />} />
-            <Route path='/donor/*' element={
-              <DonorPage />
-            } />
-            <Route path='/claimant/*' element={
-              <ClaimantPage />
-            } />
-            <Route path='/mahal/*' element={
-              <MahalRP />
-            } />
-            <Route path='vakeel/*' element={
-              <Vakeel />
-            } />
-            <Route path='*' element={<Navigate to={'/getStarted'} />} />
-          </Routes>
-        } />
+        <Route path='/general' element={<SplashScreen />} />
+        <Route path='/general/login' element={<Login general={true} userMode='General' />} />
+        <Route path='/general/signup' element={<Signup general={true} userMode='General' />} />
+        <Route path='/general/home/*' element={<GeneralPage />} />
+        <Route path='/general/profile' element={<Profile />} />
+        <Route path='/general/blog' element={<BlogPage />} />
+        <Route path='/general/donor/*' element={<DonorPage />} />
+        <Route path='/general/claimant/*' element={<ClaimantPage />} />
+        <Route path='/general/mahal/*' element={<MahalRP />} />
+        <Route path='/general/vakeel/*' element={<Vakeel />} />
         <Route path='/qr' element={<QRCodeImageScanner />} />
+        <Route path="*" element={<Navigate to={'/getStarted'} />} />
+
 
       </Routes>
     </div>
