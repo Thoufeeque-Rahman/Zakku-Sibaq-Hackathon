@@ -39,8 +39,8 @@ function HelpAndSupport() {
                         <div className="vedio-head" style={{ marginTop: '10px', marginBottom: '10px' }}>
                             <span className='fs-5' style={{ fontWeight: '600', color: 'var(--primary-color)' }}>Video Tutorial</span>
                         </div>
-                        <img src={tumbnail} width="100%" height="200" style={{ borderRadius: '10px' }} alt="" />
-                        {/* <iframe width="360" height="200" style={{ borderRadius: '10px' }} src="https://www.youtube.com/embed/0tFkcOAzYBg?si=JQtcsR_3a87scgkn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+                        {/* <img src={tumbnail} width="100%" height="200" style={{ borderRadius: '10px' }} alt="" /> */}
+                        <iframe width="100%" height="200" style={{ borderRadius: '10px' }} src="https://www.youtube.com/embed/aVCXdQIkUB4?si=3pEV10T_ZzbMMFpd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
 
