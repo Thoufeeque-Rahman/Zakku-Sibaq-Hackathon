@@ -69,8 +69,6 @@ function App() {
         <Route path='/general/vakeel/*' element={<Vakeel />} />
         <Route path='/qr' element={<QRCodeImageScanner />} />
         <Route path="*" element={<Navigate to={'/getStarted'} />} />
-
-
       </Routes>
     </div>
   );
